@@ -51,7 +51,7 @@
   },
   "scripts": {
     "start": "node ./bin/test-server.js",
-    "test": "lab -L -t 100"
+    "test": "lab -I \"__core-js_shared__,core\" -L -t 100"
   },
   "peerDependencies": {
     "hapi": "^14.0.0 || ^15.0.0 || ^16.0.0"
