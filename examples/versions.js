@@ -7,7 +7,6 @@
 
 const Hapi = require('hapi');
 const Joi = require('joi');
-const Blipp = require('blipp');
 const Inert = require('inert');
 const Vision = require('vision');
 const HapiApiVersion = require('hapi-api-version');
@@ -79,7 +78,6 @@ server.register(
     [
         Inert,
         Vision,
-        Blipp,
         {
             register: require('good'),
             options: goodOptions

@@ -2,7 +2,6 @@
 
 // `swagger-client.js` - how to plug-in to build an interface with `swagger-client`
 
-const Blipp = require('blipp');
 const Hapi = require('hapi');
 const Joi = require('joi');
 const Swagger = require('swagger-client');
@@ -47,7 +46,6 @@ const defaultHandler = function(request, reply) {
 
 server.register(
     [
-        Blipp,
         {
             register: HapiSwagger,
             options: swaggerOptions

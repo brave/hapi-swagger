@@ -2,7 +2,6 @@
 
 // `connections.js` - how to uses plugin with muiltple server connections
 
-const Blipp = require('blipp');
 const Hapi = require('hapi');
 const Hoek = require('hoek');
 const Inert = require('inert');
@@ -75,7 +74,7 @@ let swaggerOptionsB = Hoek.clone(swaggerOptions);
 swaggerOptionsA.host = 'localhost:3000';
 swaggerOptionsB.host = 'localhost:3001';
 
-server.register([Blipp, Inert, Vision], err => {
+server.register([Inert, Vision], err => {
     if (err) {
         console.log(err);
     }

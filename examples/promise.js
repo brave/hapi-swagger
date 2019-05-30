@@ -3,7 +3,6 @@
 // `promises.js` - how to setup plug-in using promises
 
 const BearerToken = require('hapi-auth-bearer-token');
-const Blipp = require('blipp');
 const Hapi = require('hapi');
 const Inert = require('inert');
 const Vision = require('vision');
@@ -134,7 +133,6 @@ const registerPlugins = function() {
             [
                 Inert,
                 Vision,
-                Blipp,
                 {
                     register: require('good'),
                     options: goodOptions

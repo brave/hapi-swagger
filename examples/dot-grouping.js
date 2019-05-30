@@ -6,7 +6,6 @@
 // in the group naming
 
 const Hapi = require('hapi');
-const Blipp = require('blipp');
 const Inert = require('inert');
 const Vision = require('vision');
 const HapiSwagger = require('../');
@@ -63,7 +62,6 @@ server.register(
     [
         Inert,
         Vision,
-        Blipp,
         {
             register: require('good'),
             options: goodOptions

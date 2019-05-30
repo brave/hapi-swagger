@@ -2,7 +2,6 @@
 
 // `connections-sep-docs.js` - how to have API on one connection and documentation on another
 
-const Blipp = require('blipp');
 const Hapi = require('hapi');
 const Inert = require('inert');
 const Vision = require('vision');
@@ -85,7 +84,6 @@ server.register(
     [
         Inert,
         Vision,
-        Blipp,
         {
             register: testPlugin,
             select: ['api']

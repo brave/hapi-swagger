@@ -2,7 +2,6 @@
 
 // `custom.js` - how build a custom documentation page with its own CSS and JS
 
-const Blipp = require('blipp');
 const Hapi = require('hapi');
 const Inert = require('inert');
 const Vision = require('vision');
@@ -86,7 +85,6 @@ server.register(
     [
         Inert,
         Vision,
-        Blipp,
         {
             register: require('good'),
             options: goodOptions
