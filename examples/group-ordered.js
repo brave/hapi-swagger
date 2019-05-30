@@ -1,7 +1,6 @@
 'use strict';
 
 // `group.js` - how to use tag based grouping
-const Blipp = require('blipp');
 const Hapi = require('hapi');
 const Inert = require('inert');
 const Vision = require('vision');
@@ -165,7 +164,6 @@ server.register(
     [
         Inert,
         Vision,
-        Blipp,
         {
             register: require('good'),
             options: goodOptions

@@ -4,7 +4,6 @@
 // the file `example/assets/test-upload.json` has data in the correct format for this example
 
 const Hapi = require('hapi');
-const Blipp = require('blipp');
 const Inert = require('inert');
 const Vision = require('vision');
 const Boom = require('boom');
@@ -102,7 +101,6 @@ server.register(
     [
         Inert,
         Vision,
-        Blipp,
         {
             register: HapiSwagger,
             options: swaggerOptions

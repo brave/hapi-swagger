@@ -4,7 +4,6 @@
 
 var Hapi = require('hapi');
 var jwt = require('jsonwebtoken');
-const Blipp = require('blipp');
 const Inert = require('inert');
 const Vision = require('vision');
 
@@ -56,7 +55,6 @@ server.register(
         require('hapi-auth-jwt2'),
         Inert,
         Vision,
-        Blipp,
         {
             register: HapiSwagger,
             options: swaggerOptions

@@ -5,7 +5,6 @@
 var Hapi = require('hapi');
 const Joi = require('joi');
 const Basic = require('hapi-auth-basic');
-const Blipp = require('blipp');
 const Inert = require('inert');
 const Vision = require('vision');
 
@@ -55,7 +54,6 @@ server.register([Basic], function(err) {
         [
             Inert,
             Vision,
-            Blipp,
             {
                 register: HapiSwagger,
                 options: swaggerOptions

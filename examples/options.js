@@ -3,7 +3,6 @@
 // `options.js` - how to use many of the plug-in options
 
 const BearerToken = require('hapi-auth-bearer-token');
-const Blipp = require('blipp');
 const H2o2 = require('h2o2');
 const Hapi = require('hapi');
 const Inert = require('inert');
@@ -150,7 +149,6 @@ server.register(
     [
         Inert,
         Vision,
-        Blipp,
         H2o2,
         {
             register: require('good'),
